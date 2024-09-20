@@ -50,7 +50,8 @@
                     # poetry
                     #python311Packages.txtai
                     # python311.withPackages(ps: with ps; [ txtai ] ++ txtai.optional-dependencies.pipeline )
-                    (python311.withPackages(pp: with pp; [ txtai ] ++ txtai.optional-dependencies.pipeline ))
+                    python311
+                    (python311.withPackages(pp: with pp; [ txtai ] ++ txtai.optional-dependencies.pipeline))
                     # python310Packages.cupy
                     # csvtool
                   ];
